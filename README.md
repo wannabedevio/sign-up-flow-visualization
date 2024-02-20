@@ -20,4 +20,4 @@ This resource can be used freely if integrated or build upon in personal or comm
 
 Follow WANNABEDEV: [GitHub](https://github.com/wannabedevio), [𝕏](https://twitter.com/wannabedev_io), [Instagram](https://www.instagram.com/wannabedev.io/), [TikTok](https://www.tiktok.com/@wannabedev.io), [YouTube](https://www.youtube.com/@wannabedev-io) 
 
-[© WANNABEDEV 2023](https://wannabedev.io)
+[© WANNABEDEV 2024](https://wannabedev.io)
