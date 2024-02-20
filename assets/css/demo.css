@@ -1,0 +1,639 @@
+/**
+ * demo.css
+ *
+ * Licensed under the MIT license.
+ * https://opensource.org/license/mit/
+ * 
+ * Copyright 2023, WANNABEDEV
+ * https://wannabedev.io
+ */
+
+ @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display:900");
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #4a4a4a;
+  font-size: 17px;
+  line-height: 25px;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  display: block;
+  width: 90%;
+  max-width: calc(100% - 32px);
+  height: 48px;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  z-index: 101;
+}
+@media screen and (max-width: 640px) {
+  header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    padding-top: 16px;
+  }
+}
+header nav.nav {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+header nav.nav li {
+  position: relative;
+  display: inline;
+  padding-right: 8px;
+}
+@media screen and (max-width: 640px) {
+  header nav.nav li {
+    padding-right: 6px;
+  }
+}
+header nav.nav li a {
+  color: #4a4a4a;
+  font-size: 15px;
+  line-height: 48px;
+  text-decoration: none;
+  outline: 0px none;
+  outline: 0px;
+  transition: 0.35s ease all;
+  -moz-transition: 0.35s ease all;
+  -webkit-transition: 0.35s ease all;
+}
+@media screen and (max-width: 640px) {
+  header nav.nav li a {
+    font-size: 13px;
+  }
+}
+header nav.nav li a span {
+  font-size: 21px;
+  color: #f4364c;
+}
+header nav.nav li a:hover {
+  color: #f4364c;
+}
+header nav.nav li:nth-child(1) {
+  padding-right: 16px;
+}
+header nav.nav li:nth-child(1) a {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+section.sign-up {
+  background-color: #f7f8fa;
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+}
+section.sign-up .animated-icons {
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+section.sign-up .animated-icons .icon {
+  position: absolute;
+  display: block;
+}
+section.sign-up .animated-icons .icon.lock {
+  top: 65%;
+  left: 85%;
+  width: 35px;
+  height: 48px;
+  background-image: url(../img/icon-lock.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 35px 48px;
+}
+section.sign-up .animated-icons .icon.idea {
+  top: 15%;
+  left: 75%;
+  width: 43px;
+  height: 48px;
+  background-image: url(../img/icon-idea.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 43px 48px;
+}
+section.sign-up .animated-icons .icon.cloud {
+  top: 85%;
+  left: 65%;
+  width: 70px;
+  height: 48px;
+  background-image: url(../img/icon-cloud.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70px 48px;
+}
+section.sign-up .animated-icons .icon.cloud-2 {
+  top: 20%;
+  left: 15%;
+  width: 47px;
+  height: 32px;
+  background-image: url(../img/icon-cloud-2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 47px 32px;
+}
+section.sign-up .animated-icons .icon.clock {
+  top: 15%;
+  left: 5%;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/icon-clock.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 32px 32px;
+}
+section.sign-up .animated-icons .icon.map {
+  top: 5%;
+  left: 55%;
+  width: 64px;
+  height: 64px;
+  background-image: url(../img/icon-map.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 64px 64px;
+}
+section.sign-up .animated-icons .icon.phone {
+  top: 85%;
+  left: 25%;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/icon-phone.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 32px 32px;
+}
+section.sign-up .animated-icons .icon.post {
+  top: 45%;
+  left: 75%;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icon-post.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px 16px;
+}
+section.sign-up .animated-icons .icon.wifi {
+  top: 75%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icon-wifi.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px 16px;
+}
+section.sign-up .animated-bcg {
+  background-color: white;
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .animated-bcg {
+    width: 100%;
+  }
+}
+section.sign-up .animated-rocket {
+  position: absolute;
+  display: block;
+  width: 164px;
+  height: 100%;
+  overflow: hidden;
+  bottom: 0;
+  left: 50%;
+  z-index: 8;
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .animated-rocket {
+    z-index: 10;
+  }
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .animated-rocket {
+    left: calc(100% - 128px);
+    opacity: 0.45;
+  }
+}
+@media screen and (max-width: 380px) {
+  section.sign-up .animated-rocket {
+    left: calc(100% - 96px);
+    opacity: 0.45;
+  }
+}
+section.sign-up .animated-rocket .dashed-line {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 128px;
+  bottom: 0;
+  background-image: url(../img/icon-dashed-line.png);
+  background-repeat: repeat-y;
+  background-position: center bottom;
+  background-size: 11px 32px;
+  z-index: 8;
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .animated-rocket .dashed-line {
+    z-index: 10;
+  }
+}
+section.sign-up .animated-rocket .rocket-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 164px;
+  bottom: 156px;
+}
+section.sign-up .animated-rocket .rocket-holder .rocket {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 164px;
+  bottom: -12px;
+  background-image: url(../img/icon-rocket.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75px 164px;
+  z-index: 8;
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .animated-rocket .rocket-holder .rocket {
+    z-index: 10;
+  }
+}
+section.sign-up .animated-rocket .rocket-holder .fire {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 48px;
+  bottom: -20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 28px 48px;
+  z-index: 1;
+}
+section.sign-up .animated-rocket .rocket-holder .fire.fire-1 {
+  background-image: url(../img/icon-fire.png);
+  z-index: 1;
+}
+section.sign-up .animated-rocket .rocket-holder .fire.fire-2 {
+  background-image: url(../img/icon-fire-2.png);
+  z-index: 2;
+}
+section.sign-up .container {
+  position: relative;
+  display: block;
+  width: 100%;
+  width: calc(100% - 32px);
+  max-width: 1360px;
+  height: 490px;
+  overflow: visible;
+  margin: 0 auto;
+  padding: 0 16px;
+  top: 50vh;
+  transform: translateY(-50%);
+  z-index: 25;
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .container {
+    margin-top: 128px;
+    height: 640px;
+    top: inherit;
+    transform: none;
+  }
+}
+section.sign-up .container .form-holder {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .container .form-holder {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .container .form-holder.mobile-helper {
+    height: 0px !important;
+    max-height: 0px !important;
+  }
+}
+section.sign-up .container .form-holder form h1 {
+  position: relative;
+  display: block;
+  width: 98%;
+  width: calc(100% - 16px);
+  max-width: 460px;
+  font-family: "Playfair Display", serif;
+  color: #4a4a4a;
+  font-size: 48px;
+  line-height: 56px;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 992px) {
+  section.sign-up .container .form-holder form h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .container .form-holder form h1 {
+    font-size: 21px;
+    line-height: 29px;
+  }
+}
+section.sign-up .container .form-holder form p {
+  position: relative;
+  display: block;
+  width: 98%;
+  width: calc(100% - 16px);
+  max-width: 420px;
+  color: #d4d5d7;
+  margin: 21px 0;
+  padding: 0;
+}
+@media screen and (max-width: 992px) {
+  section.sign-up .container .form-holder form p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+section.sign-up .container .form-holder form .group {
+  position: relative;
+  display: block;
+  width: 98%;
+  width: calc(100% - 32px);
+  max-width: 420px;
+  margin: 32px 0;
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .container .form-holder form .group {
+    max-width: calc(100% - 32px);
+  }
+}
+section.sign-up .container .form-holder form .group input {
+  background: transparent;
+  display: block;
+  width: 100%;
+  font-size: 17px;
+  padding: 10px 10px 10px 5px;
+  border: none;
+  border-bottom: 1px solid #d4d5d7;
+  transition: 0.35s ease all;
+  -moz-transition: 0.35s ease all;
+  -webkit-transition: 0.35s ease all;
+}
+section.sign-up .container .form-holder form .group input:focus {
+  border-bottom: 1px solid #f4364c;
+  outline: 0px none;
+  outline: none;
+}
+section.sign-up .container .form-holder form .group input:focus ~ label, section.sign-up .container .form-holder form .group input:valid ~ label {
+  color: #d4d5d7;
+  top: -20px;
+  font-size: 13px;
+}
+section.sign-up .container .form-holder form .group label {
+  position: absolute;
+  color: #4a4a4a;
+  pointer-events: none;
+  font-size: 17px;
+  left: 5px;
+  top: 10px;
+  transition: 0.35s ease all;
+  -moz-transition: 0.35s ease all;
+  -webkit-transition: 0.35s ease all;
+}
+section.sign-up .container .form-holder form .submit {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 435px;
+  height: auto;
+  text-align: center;
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .container .form-holder form .submit {
+    max-width: 100%;
+  }
+}
+section.sign-up .container .form-holder form .submit .submit-btn {
+  font-family: "Open Sans", sans-serif;
+  background: #f4364c;
+  position: relative;
+  display: inline;
+  width: auto;
+  height: auto;
+  font-size: 17px;
+  line-height: 17px;
+  padding: 16px 32px;
+  outline: 0px none;
+  outline: 0px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 32px;
+  font-weight: 400;
+  cursor: pointer;
+  border: 1px solid #f4364c;
+  transition: 0.35s ease all;
+  -moz-transition: 0.35s ease all;
+  -webkit-transition: 0.35s ease all;
+}
+section.sign-up .container .form-holder form .submit .submit-btn:hover {
+  opacity: 0.85;
+}
+section.sign-up .container .form-holder form .submit .submit-btn:disabled, section.sign-up .container .form-holder form .submit .submit-btn[disabled] {
+  opacity: 1;
+  color: white;
+  border: 1px solid #d4d5d7;
+  background: #d4d5d7;
+}
+section.sign-up .container .form-holder form .submit p {
+  max-width: 435px;
+  margin: 8px 0;
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .container .form-holder form .submit p {
+    max-width: 100%;
+  }
+}
+section.sign-up .container .form-holder form .submit p.p-helper {
+  font-size: 13px;
+  line-height: 21px;
+  margin-top: 16px;
+  width: 100%;
+}
+section.sign-up .container .form-holder form .submit .google a {
+  color: #4a4a4a;
+  text-decoration: none;
+  outline: 0px none;
+  outline: 0px;
+  transition: 0.35s ease all;
+  -moz-transition: 0.35s ease all;
+  -webkit-transition: 0.35s ease all;
+}
+section.sign-up .container .form-holder form .submit .google a:hover {
+  color: #f4364c;
+}
+section.sign-up .container .form-holder form .submit .google a span {
+  position: relative;
+  min-width: 64px;
+  line-height: 32px;
+}
+section.sign-up .container .form-holder form .submit .google a span img {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: -6px;
+  margin-right: 8px;
+}
+section.sign-up .container .progress-holder {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: auto;
+  overflow: visible;
+  float: left;
+  z-index: 8;
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .container .progress-holder {
+    width: 80%;
+    width: calc(100% - 128px);
+    margin: 0 auto;
+    float: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+section.sign-up .container .progress-holder span.point {
+  background-color: #f4364c;
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  top: 48px;
+  left: 50%;
+  margin-left: -16px;
+  opacity: 0;
+  visibility: hidden;
+}
+section.sign-up .container .progress-holder .success {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  margin: 0 auto;
+}
+section.sign-up .container .progress-holder .success .image {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 32px;
+}
+section.sign-up .container .progress-holder .success .image img {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1248px) {
+  section.sign-up .container .progress-holder .success .image img {
+    margin-right: -128px;
+  }
+}
+@media screen and (max-width: 640px) {
+  section.sign-up .container .progress-holder .success .image img {
+    margin: 0 auto;
+    margin-top: 32px !important;
+  }
+}
+section.sign-up .container .progress-holder .success .message {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+}
+section.sign-up .container .progress-holder .success .message h2 {
+  font-family: "Playfair Display", serif;
+  color: #4a4a4a;
+  font-size: 19px;
+  line-height: 25px;
+  padding: 0;
+  margin: 0;
+  margin-top: 32px;
+  text-align: center;
+}
+section.sign-up .container .progress-holder .success .message p {
+  color: #4a4a4a;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+section.sign-up .container .progress-holder .success .message a.back-btn {
+  font-family: "Open Sans", sans-serif;
+  background: #f4364c;
+  position: relative;
+  display: block;
+  width: 154px;
+  height: auto;
+  font-size: 17px;
+  line-height: 17px;
+  padding: 16px 32px;
+  outline: 0px none;
+  outline: 0px;
+  color: white;
+  text-transform: inherit;
+  text-decoration: none;
+  border: none;
+  border-radius: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 1px solid #f4364c;
+  transition: 0.35s ease all;
+  -moz-transition: 0.35s ease all;
+  -webkit-transition: 0.35s ease all;
+}
+section.sign-up .container .progress-holder .success .message a.back-btn:hover {
+  opacity: 0.85;
+}

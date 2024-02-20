@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sign up Flow Visualization - DEMO - wannabedev.io</title>
+		<meta name="description" content="Visualization of the sign up flow made with HTML5, SCSS and Javascript animation library Greensock (GSAP)." />
+		<meta name="keywords" content="registration, animation, sign up form, javascript, gsap, jquery, html, css" />
+		<meta name="author" content="Mirza Hodzic" />
+		<link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJR1BPWFF0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SJR1BPWFF0', {
+        page_path: window.location.pathname,
+      });
+    </script>
+
+  </head>
+  <body>
+    
+    <!-- header START -->
+    <header>
+      <nav class="nav">
+        <li>
+          <a href="https://wannabedev.io">ROCKET<span>.</span></a>
+        </li>
+        <li>
+          <a href="https://wannabedev.io">Home</a>
+        </li>
+        <li>
+          <a href="https://wannabedev.io/tutorials/sign-up-flow-visualization">Back to Article</a>
+        </li>
+      </nav>
+    </header>
+    <!-- header END -->
+
+    <!-- demo START -->
+    <section class="sign-up">
+
+      <!-- form-holder:animations START -->   
+        <div class="animated-bcg"></div>
+    
+        <!-- form-holder:rocket START -->
+        <div class="animated-rocket">
+          <div class="dashed-line"></div>
+          <div class="rocket-holder">
+            <div class="rocket"></div>
+            <div class="fire fire-1"></div>
+            <div class="fire fire-2"></div>
+          </div>
+        </div>
+        <!-- form-holder:rocket END -->
+    
+        <!-- form-holder:icons START -->
+        <div class="animated-icons">
+          <div class="icon lock"></div>
+          <div class="icon idea"></div>
+          <div class="icon cloud"></div>
+          <div class="icon cloud-2"></div>
+          <div class="icon clock"></div>
+          <div class="icon map"></div>
+          <div class="icon phone"></div>
+          <div class="icon post"></div>
+          <div class="icon wifi"></div>
+        </div>
+        <!-- form-holder:icons END -->
+      <!-- form-holder:animations END -->
+    
+      <div class="container">
+        <!-- form-holder START -->
+        <div class="form-holder">
+    
+          <!-- form-holder:form START -->
+          <form>
+    
+            <h1>Get your free Rocket account now.</h1>
+            <p>Try Rocket BUSINESS free for 15 days.<br>
+              Downgrade to Basic (Free Forever) anytime.</p>
+    
+            <div class="group">
+              <input type="text" name="fullname" id="fullname" required>
+              <label>Full name</label>
+            </div>
+    
+            <div class="group">
+              <input type="text" name="email" id="email" required>
+              <label>E-mail</label>
+            </div>
+            
+            <div class="submit">
+              <input type="submit" class="submit-btn" value="Sign up" disabled="disabled">
+              <p class="p-helper">or</p>
+              <div class="google">
+                <a href="#0">
+                  <span><img src="assets/img/icon-google.png" alt="wannabedev - google"/></span> <span>Sign up with Google</span>
+                </a>
+              </div>
+            </div>
+    
+          </form>
+          <!-- form-holder:form END -->
+    
+        </div>
+        <!-- form-holder END -->
+    
+        <!-- progress-holder START -->
+        <div class="progress-holder">
+          <span class="point"></span>
+          <div class="success">
+            <div class="image">
+              <img src="assets/img/main.png" alt="wannabedev" />
+            </div>
+            <div class="message">
+              <h2>Your Rocket's account has been created.</h2>
+              <p>Check your mailbox, you should get the activation link shortly.</p>
+              <a href="https://wannabedev.io" class="back-btn">Back to homepage</a>
+            </div>
+          </div>
+        </div>
+        <!-- progress-holder END -->
+      </div>
+    
+    </section>
+    <!-- demo END -->
+
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="assets/js/gsapClassNames.js"></script>
+    <script src="assets/js/demo.js"></script>
+
+  </body>
+</html>
