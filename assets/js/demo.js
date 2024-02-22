@@ -4,7 +4,7 @@
  * Licensed under the MIT license.
  * https://opensource.org/license/mit/
  * 
- * Copyright 2023, WANNABEDEV
+ * Copyright 2024, WANNABEDEV
  * https://wannabedev.io
  */
 
@@ -31,9 +31,9 @@ const initializeRocketAnimation = () => {
 
   // Simple validation function
   const validate = () => {
-    const myInputs = document.querySelectorAll("input:not([type='submit'])");
+    const myInputs = document.querySelectorAll('input:not([type=\'submit\'])');
     const inputsWithValues = [...myInputs].filter(input => input.value).length;
-    document.querySelector("input[type=submit]").disabled = inputsWithValues !== myInputs.length;
+    document.querySelector('input[type=submit]').disabled = inputsWithValues !== myInputs.length;
   };
 
   validate();
@@ -44,11 +44,12 @@ const initializeRocketAnimation = () => {
   });
 
   // Fire animation
+  // eslint-disable-next-line no-unused-vars
   const RocketFire = () => {
     const fireTimeline = gsap.timeline();
     fireTimeline
-      .to(".fire-1", { duration: 0.75, y: () => Random(-4, 4), rotation: () => Random(-2, 2), ease: 'sine.inOut', onComplete: RocketFire })
-      .to(".fire-2", { duration: 0.75, y: () => Random(-10, 6), rotation: () => Random(-2, 2), ease: 'sine.inOut', onComplete: RocketFire });
+      .to('.fire-1', { duration: 0.75, y: () => Random(-4, 4), rotation: () => Random(-2, 2), ease: 'sine.inOut', onComplete: RocketFire })
+      .to('.fire-2', { duration: 0.75, y: () => Random(-10, 6), rotation: () => Random(-2, 2), ease: 'sine.inOut', onComplete: RocketFire });
   };
 
   // Random function
@@ -83,7 +84,7 @@ const initializeRocketAnimation = () => {
     .to(point, { duration: time, autoAlpha: 1, y: -92, ease: 'power4.out' }, `-=${time}`);
 
   // Change value of the first input
-  document.getElementById("fullname").addEventListener("input", function () {
+  document.getElementById('fullname').addEventListener('input', function () {
     if (this.value) {
       if (emailHasValue) {
         rocketTimelineStepSecond.play();
@@ -102,7 +103,7 @@ const initializeRocketAnimation = () => {
   });
 
   // Change value of the second input
-  document.getElementById("email").addEventListener("input", function () {
+  document.getElementById('email').addEventListener('input', function () {
     if (this.value) {
       if (fullnameHasValue) {
         rocketTimelineStepSecond.play();
